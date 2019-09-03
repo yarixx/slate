@@ -59,16 +59,16 @@ Permissions can be combined. Example: `objectPermissions + (create-objects | man
 
 ## Method parameters
 
-Method parameters are those method URL segments starting with colon (`:`). These segments are replaced with actual values when you form a request.
+Method parameters are those method URL segments enclosed in brackets (`{}`). These segments are replaced with actual values when you form a request.
 
-Let's say we want to use `/node/api/classes/:id/object-count` method with parameter `id=24`. We will get:
+Let's say we want to use `/node/api/classes/{id}/object-count` method with parameter `id=24`. We will get:
 
-`/node/api/classes/:id/object-count` -> `/node/api/classes/24/object-count`
+`/node/api/classes/{id}/object-count` -> `/node/api/classes/24/object-count`
 
 ## Method options
 
 Method options are additional inputs to REST method, that can be added after question sign (`?`) using URL parameter format.
 
-For example, if we want to use `/node/api/objects/:id/history` with parameter `id=333` and options `from=3m-ago` and `to=1m-ago`, we will get:
+For example, if we want to use `/node/api/objects/{id}/history` with parameter `id=333` and options `from=3m-ago` and `to=1m-ago`, we will get:
 
-`/node/api/objects/:id/history` -> `/node/api/objects/333/history` -> `/node/api/objects/333/history?from=3m-ago&to=1m-ago`
+`/node/api/objects/{id}/history` -> `/node/api/objects/333/history` -> `/node/api/objects/333/history?from=3m-ago&to=1m-ago`
