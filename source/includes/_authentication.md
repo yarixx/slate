@@ -1,13 +1,3 @@
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
 # Authentication
 
 You can authenticate with one of the following options:
@@ -17,8 +7,6 @@ You can authenticate with one of the following options:
 * API Key (API Token)
 
 ## Basic Auth / Plain text
-
-> To authorize, use this code:
 
 ```python
 TODO
@@ -42,11 +30,23 @@ Pretend your login is `your_login` and the password is `your_password`. You can 
 
 ## Basic Auth / Base64
 
+```python
+TODO
+```
+
+```shell
+TODO
+```
+
+```javascript
+TODO
+```
+
+> Make sure to replace `your_login:your_password` with your credentials.
+
 TODO
 
 ## Create new Session
-
-> To authorize, use this code:
 
 ```python
 TODO
@@ -59,12 +59,21 @@ curl "https://your.server.name/node/api/users/session" \
   -X POST \
   -d '{"login": "your_login", "password": "your_password"}'
   
+# Use session id in reqests:
+TODO
+  
 # Create session id and save it to cookies.txt file:
 curl "https://your.server.name/node/api/users/session" \
   -H "Content-Type: application/json" \
   -X POST \
   -d '{"login": "your_login", "password": "your_password"}' \
   --cookie-jar cookies.txt
+
+# Use session id previously saved to cookies.txt file:
+curl "https://your.server.name/node/api/users/current" \
+  -H "Content-Type: application/json" \
+  -X GET \
+  --cookie cookies.txt
 ```
 
 ```javascript
@@ -92,25 +101,16 @@ TODO
 ```
 
 ```shell
-# Create session id:
 curl "https://your.server.name/node/api/users/session" \
   -H "Content-Type: application/json" \
-  -X POST \
-  -d '{"login": "your_login", "password": "your_password"}'
-  
-# Create session id and save it to cookies.txt file:
-curl "https://your.server.name/node/api/users/session" \
-  -H "Content-Type: application/json" \
-  -X POST \
-  -d '{"login": "your_login", "password": "your_password"}' \
-  --cookie-jar cookies.txt
+  -X DELETE
 ```
 
 ```javascript
 TODO
 ```
 
-> The above command returns your session id like this:
+> Success response:
 
 ```json
 TODO
@@ -129,7 +129,15 @@ TODO
 ```
 
 ```shell
-TODO
+# Create authentication token:
+curl "https://your.server.name/node/api/users/5716a3296c2356651eab0814/auth-token" \
+  -H "Content-Type: application/json" \
+  -X POST
+
+# Use authentication token:
+curl "https://your.server.name/node/api/users/current?api-token= 32925106-8c56-41d1-8713-410f203e8ce0" \
+  -H "Content-Type: application/json" \
+  -X GET
 ```
 
 ```javascript
@@ -163,14 +171,16 @@ TODO
 ```
 
 ```shell
-TODO
+curl "https://your.server.name/node/api/users/5716a3296c2356651eab0814/auth-token" \
+  -H "Content-Type: application/json" \
+  -X DELETE
 ```
 
 ```javascript
 TODO
 ```
 
-> The above command returns your session id like this:
+> Success response:
 
 ```json
 TODO
