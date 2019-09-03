@@ -6,7 +6,7 @@ You can authenticate with one of the following options:
 * Session ID (Cookie)
 * API Key (API Token)
 
-## Basic Auth / Plain text
+## Basic Auth
 
 ```python
 TODO
@@ -37,13 +37,11 @@ TODO
 
 > Make sure to replace `your_login:your_password` with your credentials.
 
-Pretend your login is `your_login` and the password is `your_password`. You can use basic auth in every request.
+Pretend your login is `your_login` and the password is `your_password`. You can use basic auth in every request:
 
-You can:
-
-* include login and password as part of the URL;
-* pass login and password as args to e.g. cURL;
-* send login and password as base64-encoded header.
+* including login and password as part of the URL;
+* passing login and password as args to e.g. cURL;
+* sending login and password as base64-encoded header.
 
 Please see examples on the right.
 
