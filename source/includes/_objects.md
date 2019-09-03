@@ -25,7 +25,7 @@ TODO
     "name": "Object name",
     "class_id": 3,
     "state_id": 5,
-      "properties": Array[1][
+      "properties": [
         {
           "name": "SN",
           "value": "-",

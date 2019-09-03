@@ -81,7 +81,7 @@ TODO
 
 > The above command returns your session id like this:
 
-```json
+```
 "7b9d2b27-a47d-4bbe-a2f7-2c63bf356db0"
 ```
 
@@ -111,7 +111,7 @@ TODO
 
 > Success response:
 
-```json
+```
 TODO
 ```
 
@@ -145,7 +145,7 @@ TODO
 
 > The above command returns your session id like this:
 
-```json
+```
 32925106-8c56-41d1-8713-410f203e8ce0
 ```
 
@@ -181,7 +181,7 @@ TODO
 
 > Success response:
 
-```json
+```
 TODO
 ```
 
