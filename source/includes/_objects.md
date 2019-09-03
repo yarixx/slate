@@ -99,6 +99,8 @@ Retrieves a single Object by ID. By default an Object is returned with full cont
 
 `Permission: objectPermissions`
 
+### Parameters
+
 Parameter | Type | Description
 :-------- | :--- | :----------
 id *`required`* | string | The ID of the object.
@@ -138,6 +140,8 @@ Deletes a given Object and its child Objects.
 `GET /node/api/objects/{id}`
 
 `Permission: objectPermissions + (delete-objects | manage-objects)`
+
+### Parameters
 
 Parameter | Type | Description
 :-------- | :--- | :----------
