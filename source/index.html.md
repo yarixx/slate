@@ -12,7 +12,7 @@ toc_footers:
 
 includes:
   - authentication
-  - kittens
+  - objects
   - errors
   - template
 

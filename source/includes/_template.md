@@ -41,14 +41,14 @@ Description of an endpoint.
 Parameter | Type | Description
 :-------- | :--- | :----------
 id *`required`* | string | The ID of the object.
-XXX *`optional`* | string/timestamp/integer | Optional parameter.
+XXX *`optional`* | string/timestamp/integer/boolean/list | Optional parameter.
 
 ### Options
 
 Option | Type | Description
 :----- | :--- | :----------
-XXX *`required`* | string/timestamp/integer | Required parameter.
-XXX *`optional`* | string/timestamp/integer | Optional parameter.
+XXX *`required`* | string/timestamp/integer/boolean/list | Required parameter.
+XXX *`optional`* | string/timestamp/integer/boolean/list | Optional parameter.
 
 
 <aside class="success">
