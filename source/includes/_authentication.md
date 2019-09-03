@@ -13,11 +13,22 @@ TODO
 ```
 
 ```shell
-# With shell, you can just pass the correct header with each request
+# Include login and password as part of the URL
+curl "https://your_login:your_password@your.server.name/node/api/users/current" \
+  -H "Content-Type: application/json" \
+  -X GET
+
+# Pass login and password as args
 curl "https://your.server.name/node/api/users/current" \
   -H "Content-Type: application/json" \
   -X GET \
   -u "your_login:your_password"
+  
+# Send login and password as base64-encoded header
+curl "https://your.server.name/node/api/users/current" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Basic eW91cl9sb2dpbjp5b3VyX3Bhc3N3b3Jk" \
+  -X GET
 ```
 
 ```javascript
@@ -28,23 +39,13 @@ TODO
 
 Pretend your login is `your_login` and the password is `your_password`. You can use basic auth in every request.
 
-## Basic Auth / Base64
+You can:
 
-```python
-TODO
-```
+* include login and password as part of the URL;
+* pass login and password as args to e.g. cURL;
+* send login and password as base64-encoded header.
 
-```shell
-TODO
-```
-
-```javascript
-TODO
-```
-
-> Make sure to replace `your_login:your_password` with your credentials.
-
-TODO
+Please see examples on the right.
 
 ## Create new Session
 
