@@ -1,15 +1,15 @@
 # Template
 
-## Method name like Get all Objects
+## Method name e.g. Get all Objects
 
-> Maybe a comment before examples
+> Optional comment before examples
 
 ```python
 TODO or example
 ```
 
 ```shell
-# Maybe a comment
+# Optional comment for shell example
 curl "https://your.server.name/node/api/XXX" \
   -H "Content-Type: application/json" \
   -X GET/POST/PUT/PATCH/DELETE \
@@ -20,7 +20,7 @@ curl "https://your.server.name/node/api/XXX" \
 TODO or example
 ```
 
-> Maybe a comment after examples
+> Optional comment after examples
 > or The above command returns JSON structured like this:
 > or Success response:
 
@@ -32,7 +32,8 @@ Description of an endpoint.
 
 ### HTTP Request
 
-`GET /node/api/XXX`
+`GET/POST/PUT/PATCH/DELETE /node/api/XXX`
+
 `Permission: objectPermissions + (delete-objects | manage-objects)`
 
 ### Parameters
@@ -51,14 +52,15 @@ XXX *`optional`* | string/timestamp/integer | Optional parameter.
 
 
 <aside class="success">
-Green section.
+Optional Green section.
 </aside>
 
 <aside class="notice">
-Blue section.
+Optional Blue section.
 </aside>
 
 <aside class="warning">
-Red section.
+Optional Red section.
+
 Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.
 </aside>
