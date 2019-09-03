@@ -14,6 +14,7 @@ includes:
   - authentication
   - kittens
   - errors
+  - template
 
 search: true
 ---
