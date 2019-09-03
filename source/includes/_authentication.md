@@ -160,9 +160,9 @@ Creates and returns an Authentication Token, which can be further used to authen
 
 ### Parameters
 
-Parameter | Description
-:-------- | :----------
-id | The ID of the user to generate auth-token for.
+Parameter | Type | Description
+:-------- | :--- | :----------
+id *`required`* | string | The ID of the user to generate auth-token for.
 
 ## Delete Authentication Token
 
@@ -196,6 +196,6 @@ Deletes Authentication Token of a given User. All further requests with existing
 
 ### Parameters
 
-Parameter | Description
-:-------- | :----------
-id | The ID of the user to delete auth-token for.
+Parameter | Type | Description
+:-------- | :--- | :----------
+id *`required`* | string | The ID of the user to delete auth-token for.
